@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Picks | 映画情報サイト</title>
+    <meta name="description" content="このサイトはテストページです。話題の映画や新着映画情報などを紹介するサイトです。">
+    <link rel="icon" href="./image/favicon.ico" sizes="32x32">
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/css-reset.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- my.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- my.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="#"><img src="./image/header_logo.png" alt="Popcorn Picks"></a>
+      </h1><!-- /.header-logo -->
+
+      <!-- ハンバーガーボタン -->
+      <button type="button" class="hamburger-button">
+        <span class="hamburger-button__bar"></span>
+        <span class="hamburger-button__bar"></span>
+        <span class="hamburger-button__bar"></span>
+        <span class="hamburger-button__title">メニュー</span>
+      </button>
+
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger-menu header-nav__container">
+        <nav class="hamburger-nav__first">
+          <ul class="hamburger-nav__first__listgroup">
+            <li><a href="#">映画</a></li>
+            <li><a href="#">特集</a></li>
+            <li><a href="#">ランキング</a></li>
+          </ul><!-- /.hamburger-nav__first__listgroup -->
+        </nav><!-- /.hamburger-nav__first -->
+
+        <nav class="hamburger-nav__second">
+          <ul class="hamburger-nav__second__listgroup">
+            <li><a href="#"><i class="bi bi-search"></i><span class="hamburger-nav__second__listgroup-text">検索</span></a></li>
+            <li><a href="#"><i class="bi bi-box-arrow-right"></i><span class="hamburger-nav__second__listgroup-text">ログイン</span></a></li>
+          </ul><!-- /.hamburger-nav__second__listgroup -->
+        </nav><!-- /.hamburger-nav__second -->
+
+        <nav class="hamburger-nav__third">
+          <ul class="hamburger-nav__third__listgroup">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul><!-- /.hamburger-nav__third__listgroup -->
+        </nav><!-- /.hamburger-nav__third -->
+        <ul class="hamburger-sns">
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+        </ul><!-- /.hamburger-sns -->
+      </div><!-- /.hamburger-menu header__nav__container -->
+    </header><!-- /.header -->
+
+    <!-- メイン -->
+    <main class="main">
+      <!-- カバー -->
+      <div class="cover">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- 1枚目 -->
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./image/m_cover01_pc.jpg">
+                <img src="./image/m_cover01_sp.jpg" alt="天使にニャウ・ソングを">
+              </picture>
+            </div><!-- /.swiper-slide -->
+            <!-- 2枚目 -->
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./image/m_cover02_pc.jpg">
+                <img src="./image/m_cover02_sp.jpg" alt="50回目の猫パンチ">
+              </picture>
+            </div><!-- /.swiper-slide -->
+            <!-- 3枚目 -->
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./image/m_cover03_pc.jpg">
+                <img src="./image/m_cover03_sp.jpg" alt="THE GOOD THE BAD THE WEIRD CAT">
+              </picture>
+            </div><!-- /.swiper-slide -->
+          </div>
+
+          <!-- pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- スクロール -->
+        <span class="cover__scroll"><img src="./image/cover_scroll.svg" alt="Scroll" class="cover__scroll__image"></span><!-- /.cover__scroll -->
+      </div><!-- /.cover -->
+
+      <!-- 新着情報 -->
+      <div class="new">
+        <div class="container">
+          <h2 class="section-title">
+            <img src="./image/new_title.svg" alt="New" class="section-title-en">
+            <span class="section-title-jp">新着映画</span>
+          </h2><!-- /.section-title -->
+
+          <div class="new__movie">
+            <!-- 1個目 -->
+            <a href="#" class="new__movie__item">
+              <img src="./image/new_01.jpg" alt="THE LION KING" class="new__movie__item__image">
+              <h3 class="new__movie__item__title">夏休みは家族で冒険の旅へ！【THE LION KING】</h3><!-- /.new__movie__item__title -->
+              <div class="new__movie__item__bottom">
+                <span class="new__movie__item__category">アドベンチャー</span>
+                <span class="new__movie__item__date">2025.01.00</span>
+              </div><!-- /.new__movie__item__bottom -->
+            </a><!-- /.new__movie__item -->
+            <!-- 2個目 -->
+            <a href="#" class="new__movie__item">
+              <img src="./image/new_02.jpg" alt="HOME ALONe" class="new__movie__item__image">
+              <h3 class="new__movie__item__title">このラッコ、ただのラッコじゃない…？！【HOME ALONe】</h3><!-- /.new__movie__item__title -->
+              <div class="new__movie__item__bottom">
+                <span class="new__movie__item__category">コメディ</span>
+                <span class="new__movie__item__date">2025.01.00</span>
+              </div><!-- /.new__movie__item__bottom -->
+            </a><!-- /.new__movie__item -->
+            <!-- 3個目 -->
+            <a href="#" class="new__movie__item">
+              <img src="./image/new_03.jpg" alt="Breakfast at Tiffany's" class="new__movie__item__image">
+              <h3 class="new__movie__item__title">みんなが彼女に夢中になる！【Breakfast at Tiffany's】</h3><!-- /.new__movie__item__title -->
+              <div class="new__movie__item__bottom">
+                <span class="new__movie__item__category">ロマンス</span>
+                <span class="new__movie__item__date">2025.01.00</span>
+              </div><!-- /.new__movie__item__bottom -->
+            </a><!-- /.new__movie__item -->
+            <!-- 4個目 -->
+            <a href="#" class="new__movie__item">
+              <img src="./image/new_04.jpg" alt="JAWS" class="new__movie__item__image">
+              <h3 class="new__movie__item__title">彼はただお腹を空かせているだけ…【JAWS】</h3><!-- /.new__movie__item__title -->
+              <div class="new__movie__item__bottom">
+                <span class="new__movie__item__category">スリラー</span>
+                <span class="new__movie__item__date">2025.01.00</span>
+              </div><!-- /.new__movie__item__bottom -->
+            </a><!-- /.new__movie__item -->
+          </div><!-- /.new__movie -->
+
+          <a href="#" class="button button__green__ghost">もっと見る</a>
+        </div><!-- /.container -->
+      </div><!-- /.new -->
+
+      <!-- 特集 -->
+      <div class="top-pick">
+        <div class="top-pick">
+          <div class="container">
+            <!-- サムネイル -->
+            <div class="top-pick__thumbnail">
+              <h2 class="top-pick__thumbnail__title">
+                <img src="./image/top-pick_title.svg" alt="top-pick" class="top-pick__thumbnail__title__image">
+              </h2>
+              <img src="./image/top-pick.jpg" alt="BRIDGET JONES THE EDGE OF REASONBRIDGET JONES THE EDGE OF REASON" class="top-pick__thumbnail__image">
+              <!-- /.top-pick__thumbnail__title -->
+
+            </div><!-- /.top-pick__thumbnail -->
+            <!-- テキスト -->
+            <div class="top-pick__body">
+              <h3 class="top-pick__body__title">あのロマンチックコメディが9年ぶりに帰って来た！</h3><!-- /.top-pick__body__title -->
+              <p>年老いた飼い主を看取った猫のブリジットは、マークの家を飛び出し近くのキャンパスで学生たちに可愛がられながら自由気ままに暮らしていた。ある日、縄張り争いに破れ傷だらけでさ迷う若いオス猫のロクスターと出会い、次第に彼に惹かれていく…。</p>
+              <h4 class="top-pick__body__point">POINT</h4><!-- /.top-pick__body__point -->
+              <p>第一作からブリジットの前に現れてはトラブルを巻き起こしてきたボス猫・ダニエルが再登場！ブリジットを巡って争う二匹の雄姿から目が離せません！</p>
+              <a href="#" class="button button__white__ghost">もっと見る</a>
+            </div><!-- /.top-pick__body -->
+          </div><!-- /.container -->
+        </div><!-- /.top-pick -->
+
+      </div><!-- /.top-pick -->
+
+      <!-- ランキング -->
+      <div class="ranking">
+        <div class="container">
+          <h2 class="section-title">
+            <img src="./image/ranking_title.svg" alt="Ranking" class="section-title-en">
+            <span class="section-title-jp">ランキング</span>
+          </h2><!-- /.section-title -->
+          <ol class="ranking__list-group">
+            <!-- 1個目 -->
+            <li>
+              <a href="#" class="ranking__list-group__item">
+                <div class="ranking__thumbnail">
+                  <img src="./image/ranking_1.svg" alt="No.1" class="ranking__thumbnail__badge">
+                  <img src="./image/ranking_thumb01.jpg" alt="EXPEND4BLS">
+                </div><!-- /.ranking__thumbnail -->
+                <div class="ranking__body">
+                  <h3 class="ranking__body__title">2024年下半期バズり映画TOP10</h3><!-- /.ranking__body__title -->
+                  <div class="ranking__body__inner">
+                    <span class="ranking__body__category">全ジャンル</span>
+                    <span class="ranking__body__date">2025.01.00</span>
+                  </div><!-- /.ranking__body__inner -->
+                </div><!-- /.ranking__body -->
+              </a>
+            </li>
+            <!-- 2個目 -->
+            <li>
+              <a href="#" class="ranking__list-group__item">
+                <div class="ranking__thumbnail">
+                  <img src="./image/ranking_2.svg" alt="No.2" class="ranking__thumbnail__badge">
+                  <img src="./image/ranking_thumb02.jpg" alt="WORLD WAR Z">
+                </div><!-- /.ranking__thumbnail -->
+                <div class="ranking__body">
+                  <h3 class="ranking__body__title">真夏にぴったり！ゾンビホラー特集</h3><!-- /.ranking__body__title -->
+                  <div class="ranking__body__inner">
+                    <span class="ranking__body__category">ホラー</span>
+                    <span class="ranking__body__date">2025.01.00</span>
+                  </div><!-- /.ranking__body__inner -->
+                </div><!-- /.ranking__body -->
+              </a>
+            </li>
+            <!-- 3個目 -->
+            <li>
+              <a href="#" class="ranking__list-group__item">
+                <div class="ranking__thumbnail">
+                  <img src="./image/ranking_3.svg" alt="No.3" class="ranking__thumbnail__badge">
+                  <img src="./image/ranking_thumb03.jpg" alt="KILL BILL">
+                </div><!-- /.ranking__thumbnail -->
+                <div class="ranking__body">
+                  <h3 class="ranking__body__title">最高にアツい！アクション特集</h3><!-- /.ranking__body__title -->
+                  <div class="ranking__body__inner">
+                    <span class="ranking__body__category">アクション</span>
+                    <span class="ranking__body__date">2025.01.00</span>
+                  </div><!-- /.ranking__body__inner -->
+                </div><!-- /.ranking__body -->
+              </a>
+            </li>
+            <!-- 4個目 -->
+            <li>
+              <a href="#" class="ranking__list-group__item">
+                <div class="ranking__thumbnail">
+                  <img src="./image/ranking_thumb04.jpg" alt="THE MASK">
+                </div><!-- /.ranking__thumbnail -->
+                <div class="ranking__body">
+                  <h3 class="ranking__body__title">親子で観たい爆笑コメディ10選</h3><!-- /.ranking__body__title -->
+                  <div class="ranking__body__inner">
+                    <span class="ranking__body__category">コメディ</span>
+                    <span class="ranking__body__date">2025.01.00</span>
+                  </div><!-- /.ranking__body__inner -->
+                </div><!-- /.ranking__body -->
+              </a>
+            </li>
+            <!-- 5個目 -->
+            <li>
+              <a href="#" class="ranking__list-group__item">
+                <div class="ranking__thumbnail">
+                  <img src="./image/ranking_thumb05.jpg" alt="DREAM SCENARIO">
+                </div><!-- /.ranking__thumbnail -->
+                <div class="ranking__body">
+                  <h3 class="ranking__body__title">予測不能！ラストで裏切られるミステリ特集</h3><!-- /.ranking__body__title -->
+                  <div class="ranking__body__inner">
+                    <span class="ranking__body__category">ミステリ</span>
+                    <span class="ranking__body__date">2025.01.00</span>
+                  </div><!-- /.ranking__body__inner -->
+                </div><!-- /.ranking__body -->
+              </a>
+            </li>
+          </ol><!-- /.ranking__list-group -->
+        </div><!-- /.container -->
+      </div><!-- /.ranking -->
+
+      <!-- 検索 -->
+      <div class="search">
+        <div class="container">
+          <div class="search__title">
+            <h2 class="section-title">
+              <img src="./image/search_title.svg" alt="Search" class="section-title-en">
+              <span class="section-title-jp">映画検索</span>
+            </h2><!-- /.section-title -->
+            <a href="#" class="search__more"><i class="bi bi-caret-right-fill"></i>もっと見る</a>
+          </div><!-- /.search__title -->
+
+          <ul class="search__category">
+            <li><a href="#" class="button button__green__ghost">ホラー</a></li>
+            <li><a href="#" class="button button__green__ghost">アクション</a></li>
+            <li><a href="#" class="button button__green__ghost">コメディ</a></li>
+            <li><a href="#" class="button button__green__ghost">ロマンス</a></li>
+            <li><a href="#" class="button button__green__ghost">ミステリー</a></li>
+            <li><a href="#" class="button button__green__ghost">イベント情報</a></li>
+            <li><a href="#" class="button button__green__ghost">インド映画</a></li>
+            <li><a href="#" class="button button__green__ghost">アニメ</a></li>
+            <li><a href="#" class="button button__green__ghost">SF</a></li>
+            <li><a href="#" class="button button__green__ghost">青春</a></li>
+            <li><a href="#" class="button button__green__ghost">ミュージカル</a></li>
+            <li><a href="#" class="button button__green__ghost">ファミリー</a></li>
+            <li><a href="#" class="button button__green__ghost">歴史</a></li>
+            <li><a href="#" class="button button__green__ghost">クライム</a></li>
+            <li><a href="#" class="button button__green__ghost">ショートフィルム</a></li>
+            <li><a href="#" class="button button__green__ghost">戦争</a></li>
+            <li><a href="#" class="button button__green__ghost">バイオレンス</a></li>
+            <li><a href="#" class="button button__green__ghost">スポーツ</a></li>
+          </ul><!-- /.search__category -->
+        </div><!-- /.container -->
+      </div><!-- /.serch -->
+    </main><!-- /.main -->
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <h2 class="footer__logo">
+            <a href="#"><img src="./image/footer_logo.png" alt="Popcorn Picks"></a>
+          </h2><!-- /.footer__logo -->
+          <ul class="footer__list-group_first">
+            <li><a href="#">映画一覧</a></li>
+            <li><a href="#">特集</a></li>
+            <li><a href="#">ランキング</a></li>
+          </ul><!-- /.footer__list-group_first -->
+          <ul class="footer__list-group_second">
+            <li><a href="#">運営会社</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul><!-- /.footer__list-group_second -->
+        </div><!-- /.footer__left -->
+        <div class="footer__right">
+          <ul class="footer__sns">
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+          </ul><!-- /.footer__sns -->
+          <small>Copyright &copy; 2025 Popcorn Picks All Rights Reserved.</small>
+        </div><!-- /.footer__right -->
+        <a href="#" class="go-top">
+          <i class="bi bi-arrow-up-short"></i>
+        </a><!-- /.go-top -->
+      </div><!-- /.container -->
+    </footer><!-- /.footer -->
+  </body>
+
+</html>
